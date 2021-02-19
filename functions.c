@@ -24,7 +24,7 @@ int** alloc_matrix(int n, int m)
     return matrix;
 }
 
-// principal function load
+//function load an image
 
 void load_function(image_t* image, char* file_name)
 {
