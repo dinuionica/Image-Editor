@@ -11,7 +11,7 @@
  >###### -> ROTATE [angle]<br />
  >###### -> SAVE [file_name] (ASCII OR BINARY).<br />
 
-SIMPLE TEST:<br />
+Simple test:<br />
 ```
 ##  LOAD input/image.pgm<br />
 ##  SELECT 0 0 500 500<br />
@@ -19,7 +19,7 @@ SIMPLE TEST:<br />
 ##  ROTATE 90<br />
 ##  SAVE new_image.pgm ASCII<br />
 ```
-To test this project:
+For download this project:
 ```
 https://github.com/dinuionica/Password-Manager.git
 ```
