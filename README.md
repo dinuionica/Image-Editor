@@ -3,9 +3,9 @@
   A pgm image editor written in C language, using dynamic programming.
 
  The main options are to edit an image:
- ###### > LOAD name_image<br />
- ###### > SELECT sizes<br />
- ###### > CROP<br />
+ >###### LOAD name_image<br />
+ >###### SELECT sizes<br />
+ >###### CROP<br />
  ###### > ROTATE angle<br />
  ###### > SAVE file_name (ASCII OR BINARY).<br />
 
