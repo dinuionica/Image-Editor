@@ -21,7 +21,7 @@ Simple test:<br />
 ```
 For download this project:
 ```
-https://github.com/dinuionica/Password-Manager.git
+https://github.com/dinuionica/Image-Editor.git
 ```
 
 On Linux:
