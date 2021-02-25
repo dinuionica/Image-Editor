@@ -1,9 +1,9 @@
 
----------**IMAGE EDITOR**-------------
-
+**IMAGE EDITOR**
 A pgm image editor written in C language, using dynamic programming.
 
 The main options are to edit an image:
+
 > LOAD name_image<br />
 > SELECT sizes<br />
 > CROP<br />
