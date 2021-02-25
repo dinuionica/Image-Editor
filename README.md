@@ -13,11 +13,11 @@
 
 Simple test:<br />
 ```
-##  LOAD input/image.pgm<br />
-##  SELECT 0 0 500 500<br />
-##  CROP<br />
-##  ROTATE 90<br />
-##  SAVE new_image.pgm ASCII<br />
+LOAD input/image.pgm<br />
+SELECT 0 0 500 500<br />
+CROP<br />
+ROTATE 90<br />
+SAVE new_image.pgm ASCII<br />
 ```
 For download this project:
 ```
