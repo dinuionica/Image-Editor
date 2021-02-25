@@ -1,5 +1,5 @@
 
-**IMAGE EDITOR**<br />
+## Image-Editor<br />
 
  A pgm image editor written in C language, using dynamic programming.
 
