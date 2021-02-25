@@ -6,10 +6,10 @@
  >###### LOAD name_image<br />
  >###### SELECT sizes<br />
  >###### CROP<br />
- ###### > ROTATE angle<br />
- ###### > SAVE file_name (ASCII OR BINARY).<br />
+ >######  ROTATE angle<br />
+ >######  SAVE file_name (ASCII OR BINARY).<br />
 
-###### SIMPLE TEST:<br />
+SIMPLE TEST:<br />
 ######  LOAD input/image.pgm<br />
 ######  SELECT 0 0 500 500<br />
 ###### CROP<br />
