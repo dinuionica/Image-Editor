@@ -14,10 +14,10 @@
 Simple test:<br />
 ```
 LOAD input/image.pgm
-SELECT 0 0 500 500<
-CROP<br />
-ROTATE 90<br />
-SAVE new_image.pgm ASCII<br />
+SELECT 0 0 500 500
+CROP
+ROTATE 90
+SAVE new_image.pgm ASCII
 ```
 For download this project:
 ```
