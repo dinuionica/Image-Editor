@@ -1,4 +1,4 @@
-//Copyright 2020 Dinu Ion Irinel
+// Copyright 2020 Dinu Ion Irinel
 #include "functions.h"
 #include <stdio.h>
 #include <string.h>
@@ -24,7 +24,7 @@ int** alloc_matrix(int n, int m)
     return matrix;
 }
 
-//function load an image
+// function load an image
 
 void load_function(image_t* image, char* file_name)
 {
