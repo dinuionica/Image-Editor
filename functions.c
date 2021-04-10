@@ -1,4 +1,4 @@
-//Copyright 2020 Dinu Ion Irinel
+// Copyright 2020 Dinu Ion Irinel
 #include "functions.h"
 #include <stdio.h>
 #include <string.h>
