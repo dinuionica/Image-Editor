@@ -7,7 +7,6 @@
 #define SIZE 5
 
 // function to alloc a matrix with height and width
-
 int** alloc_matrix(int n, int m)
 {
     int** matrix = malloc(n * sizeof(int*));
@@ -24,8 +23,7 @@ int** alloc_matrix(int n, int m)
     return matrix;
 }
 
-//function load an image
-
+// function load an image
 void load_function(image_t* image, char* file_name)
 {
     image->type = malloc(SIZE * sizeof(char*));
@@ -55,7 +53,6 @@ void load_function(image_t* image, char* file_name)
 }
 
 // function to load a pgm image in ascii format
-
 void load_pgm_asc(image_t* image, char* file_name)
 {
     image->type = malloc(SIZE * sizeof(char*));
@@ -76,7 +73,6 @@ void load_pgm_asc(image_t* image, char* file_name)
 }
 
 // function to load a pgm image in binary format
-
 void load_pgm_bin(image_t* image, char* file_name)
 {
     image->type = (char*)malloc(SIZE * sizeof(char));
@@ -97,7 +93,6 @@ void load_pgm_bin(image_t* image, char* file_name)
 }
 
 // function to save an image with binary format
-
 void save_bin_function(image_t* image, char* file_name)
 {
     if (image->width == 0) {
@@ -125,7 +120,6 @@ void save_bin_function(image_t* image, char* file_name)
 }
 
 // function to save an image with ascii format
-
 void save_asc_function(image_t* image, char* file_name)
 {
     if (image->width == 0) {
@@ -153,7 +147,6 @@ void save_asc_function(image_t* image, char* file_name)
 }
 
 // select_all_coordonates
-
 void select_all(image_t* image)
 {
     image->x1 = 0;
@@ -162,7 +155,6 @@ void select_all(image_t* image)
     image->y2 = image->height;
 }
 // function to select all size of the image
-
 void select_all_function(image_t* image)
 {
     if (image->width == 0) {
@@ -175,8 +167,7 @@ void select_all_function(image_t* image)
     }
 }
 
-// function to select all size of the image
-
+// function to select size of the image
 void select_function(image_t* image, int x1, int y1, int x2, int y2)
 {
     if (image->width == 0) {
@@ -206,7 +197,6 @@ void select_function(image_t* image, int x1, int y1, int x2, int y2)
 }
 
 // function to crop an image
-
 void crop_function(image_t* image)
 {
     if (image->width == 0) {
@@ -236,7 +226,6 @@ void crop_function(image_t* image)
 }
 
 // function to exit the program
-
 void exit_function(image_t* image)
 {
     free(image->type);
@@ -249,7 +238,6 @@ void exit_function(image_t* image)
 }
 
 // swap function
-
 void swap(int* number1, int* number2)
 {
     int temp = *number1;
@@ -258,7 +246,6 @@ void swap(int* number1, int* number2)
 }
 
 // function to free matrix of values
-
 void free_mat(image_t* image)
 {
     for (int i = 0; i < image->width; ++i) {
@@ -268,7 +255,6 @@ void free_mat(image_t* image)
 }
 
 // functions to rotate an image
-
 void rotate_function(image_t* image, char* reg)
 {
     if (image->width == 0) {
