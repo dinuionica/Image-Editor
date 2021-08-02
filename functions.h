@@ -51,8 +51,6 @@ void rotate_all_left(image_t *image);
 
 void rotate_all_right(image_t *image);
 
-//function to exit the program
-
 void exit_function(image_t *image);
 
 #endif
