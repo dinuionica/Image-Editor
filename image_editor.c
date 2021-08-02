@@ -1,4 +1,5 @@
-//Copyright 2020 Dinu Ion Irinel
+/* Copyright 2020 Dinu Ion Irinel */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -6,20 +7,18 @@
 
 #define LENGTH 20
 
-int main(void)
-{
+int main(void) {
     image_t* image = malloc(sizeof(image_t));
     char* command = (char*)malloc(LENGTH * sizeof(char));
     char* argument = (char*)malloc(LENGTH * sizeof(char));
 
     while (fgets(command, LENGTH, stdin)) {
-        // delete last character
+        /* delete last character */
         if (command[strlen(command) - 1] == '\n') {
             command[strlen(command) - 1] = '\0';
         }
-
+        /* parse commands */
         command = strtok(command, " ");
-
         if (strcmp(command, "EXIT") == 0) {
             exit_function(image);
             return 0;
