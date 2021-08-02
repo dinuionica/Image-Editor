@@ -32,7 +32,7 @@ void load_function(image_t* image, char* file_name) {
         free(image->type);
         return;
     }
-    /* read image from a text file*/
+    /* read image from a text file */
     FILE* file = fopen(file_name, "r");
     if (file == NULL) {
         printf("Failed to load %s\n", file_name);
