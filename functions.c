@@ -1,4 +1,5 @@
-// Copyright 2020 Dinu Ion Irinel
+/* Copyright 2020 Dinu Ion Irinel */
+
 #include "functions.h"
 #include <stdio.h>
 #include <string.h>
@@ -6,16 +7,16 @@
 
 #define SIZE 5
 
-// function to alloc a matrix with height and width
-int** alloc_matrix(int n, int m)
-{
+/* the function that alloc a matrix with height and width */
+int** alloc_matrix(int n, int m) {
+    
+    /* alloc matrix pointer type int*/
     int** matrix = malloc(n * sizeof(int*));
-
     if (matrix == NULL) {
         free(matrix);
         return NULL;
     }
-
+    /* alloc memory of every element */
     for (int i = 0; i < n; ++i) {
         matrix[i] = malloc(m * sizeof(int));
     }
@@ -23,15 +24,14 @@ int** alloc_matrix(int n, int m)
     return matrix;
 }
 
-// function load an image
-void load_function(image_t* image, char* file_name)
-{
+/* the function that load a new  image */
+void load_function(image_t* image, char* file_name) {
     image->type = malloc(SIZE * sizeof(char*));
     if (image->type == NULL) {
         free(image->type);
         return;
     }
-
+    /* read image from a text file*/
     FILE* file = fopen(file_name, "r");
     if (file == NULL) {
         printf("Failed to load %s\n", file_name);
@@ -40,7 +40,7 @@ void load_function(image_t* image, char* file_name)
     else {
         printf("Loaded %s\n", file_name);
         fscanf(file, "%s", image->type);
-
+        /* check the image type and call the function needed */
         if (strcmp(image->type, "P2") == 0) {
             load_pgm_asc(image, file_name);
         }
@@ -52,13 +52,12 @@ void load_function(image_t* image, char* file_name)
     fclose(file);
 }
 
-// function to load a pgm image in ascii format
-void load_pgm_asc(image_t* image, char* file_name)
-{
+/* function to load a pgm image in ascii format */
+void load_pgm_asc(image_t* image, char* file_name) {
     image->type = malloc(SIZE * sizeof(char*));
 
+        
     FILE* file = fopen(file_name, "r");
-
     fscanf(file, "%s%d%d%d\n", image->type, &image->width, &image->height,
         &image->max_value);
     image->values = (int**)alloc_matrix(image->height, image->width);
