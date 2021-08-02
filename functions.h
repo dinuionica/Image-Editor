@@ -1,7 +1,7 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-// struct of an image
+/* struct of an image */
 typedef struct {
     
     char *type;
